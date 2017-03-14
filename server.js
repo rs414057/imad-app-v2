@@ -15,6 +15,8 @@ var htmlTemplate =
     `<html>
     <title>${title}</title>
     </html>`;
+
+    return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
