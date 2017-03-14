@@ -9,7 +9,9 @@ var commonContent ={
     title:'commoners title for all page'
 };
 
-var htmlTemplate ={
+function createTemplate(data){
+    var title =data.title;
+var htmlTemplate =
     `<html>
     <title>${title}</title>
     </html>`
