@@ -4,6 +4,12 @@
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+        <script>
+            function madimove(){
+                var img = document.getElementbyId('madi');
+                img.style.marginLeft = 400px;
+            }
+        </script>
         <div class="center">
             <img src="/ui/madi.png" id ='madi' class="img-medium" onclick="madimove()"/>
         </div>
@@ -15,11 +21,6 @@
         </script>
         <script>alert('test page');</script>
         
-        <script>
-            function madimove(){
-                var img = document.getElementbyId('madi');
-                img.style.marginLeft = 400px;
-            }
-        </script>
+        
     </body>
 </html>
