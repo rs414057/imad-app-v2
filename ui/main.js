@@ -8,7 +8,7 @@ but.onclick=function(){
     myRequest.open(method, url, true);
     myRequest.onreadystatechange = function () {
         if(myRequest.readyState === XMLHttpRequest.DONE && myRequest.status === 200) {
-            console.log(xhr.responseText);
+            console.log(myRequest.responseText);
         }
     };
 myRequest.send();
