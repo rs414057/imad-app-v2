@@ -8,8 +8,10 @@ but.onclick=function(){
     myRequest.open(method, url, true);
     myRequest.onreadystatechange = function () {
         if(myRequest.readyState === XMLHttpRequest.DONE && myRequest.status === 200) {
-            console.log(myRequest.responseText);
+            var counter = myRequest.responseText;
         }
     };
 myRequest.send();
+var span =document.getElementById('count_text');
+span.innerHTML = counter.toString(); 
 };
