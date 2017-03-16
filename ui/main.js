@@ -17,3 +17,10 @@ but.onclick=function(){
     myRequest.send();
 
 };
+
+var submit = document.getElementById('submit_button');
+submit.onclick = function(){
+  var name =  document.getElementById('user').value;
+  var name_list = document.getElementById('name_list');
+  name_list.innerHTML ='<li>'+name+'</li>';
+};
