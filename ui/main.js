@@ -5,13 +5,15 @@ but.onclick=function(){
   var myRequest = new XMLHttpRequest(); 
     method = "GET",
     url = "http://rs414057.imad.hasura-app.io/counter";
-    myRequest.open(method, url, true);
+    
     myRequest.onreadystatechange = function () {
         if(myRequest.readyState === XMLHttpRequest.DONE && myRequest.status === 200) {
             var counter = myRequest.responseText;
+            var span =document.getElementById('count_text');
+            span.innerHTML = counter.toString(); 
         }
     };
-myRequest.send();
-var span =document.getElementById('count_text');
-span.innerHTML = counter.toString(); 
+    myRequest.open(method, url, true);
+    myRequest.send();
+
 };
