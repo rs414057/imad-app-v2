@@ -1,6 +1,6 @@
 //console.log('Loaded!');
 var but = document.getElementById('count');
-var counter =0
+var counter =0;
 but.onclick=function(){
   var myRequest = new XMLHttpRequest(); 
     method = "GET",
